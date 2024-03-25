@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Arial Narrow', Arial, sans-serif ; 
+    /* font-family: url(./fonts/Themundayfreeversion-Regular.ttf); */
+}
+
+body {
+     background-color: #B5D99C;
+    background-image: url(./img/vista-superior-colecao-de-frutas-frescas-com-espaco-de-copia.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+/* Div de background de fundo da tela */
+#background{
+    background-color: #B5D99C;
+    background-image: url(./img/vista-superior-colecao-de-frutas-frescas-com-espaco-de-copia.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+/* Placar de erros e acertos do aluno */
+.placar{
+    position: fixed;
+    right: 0;
+    background-color: #B5D99C;
+
+    width: 200px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 4px;
+    border-radius: 10px;
+}
+
+.placar p{
+    background-color: #ffffff;
+    border-radius: 100px;
+    padding-left: 8px;
+
+    font-weight: 900;
+    color: rgb(126, 126, 126);
+
+}
+
+
+/* Titulo da tela */
+h1 {
+    font-size: 3rem;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: #799268;
+
+    /* background-color: rgba(255, 255, 255, 0.356);
+    padding: 5px 20px;
+    border-radius: 100px; */
+}
+
+
+/* Entrada do arquivo a ser processado com as questões */
+input[type="file"] {
+    display: none;
+}
+
+#file {
+    padding: 10px 10px;
+    /* width: 200px; */
+    background-color: #B5D99C;
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    
+    cursor: pointer;
+    border-radius: 10px;
+}
+#file:hover{
+    background-color: #9cb987;
+
+}
+
+
+/* Painel onde mostra o enunciado da questão */
+.question{
+    background-color: #ffffff;
+
+    width: 60%;
+    height: auto;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 15px 0;
+    word-wrap: break-word; 
+}
+
+.textDecorate{
+    color: rgba(95, 95, 95, 0.644);
+}
+
+
+/* Container com as possiveis respostas */
+.perguntas {
+    background-color: #B5D99C;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    /* width: 500px; */
+    width: 60%;
+    height: auto;
+    border-radius: 15px;
+    padding: 8px;
+}
+
+.item_questao {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    
+    gap: 8px;
+    padding: 5px;    
+    height: auto;
+    border-radius: 100px;
+
+    word-wrap: break-word; 
+}
+
+label{
+    padding: 50px 10px;
+    
+    text-transform: uppercase;
+    text-align: start;
+    display: block;
+    
+    cursor: pointer;
+    border-radius: 10px;
+
+    font-size: 12px;
+}
+label:hover{
+    background-color: #9cb987;
+}
+
+
+/* Botões de verificação e de nova questão */
+.bts-container{
+    background-color: rgba(255, 0, 0, 0);
+    padding: 10px 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    width: 60%;
+}
+
+.bts {
+    padding: 5px 20px;
+    background-color: #B5D99C;
+    border-radius: 100px;
+    font-weight: 900;
+    color: rgb(73, 73, 73);
+    border: none;
+} 
+.bts:hover {
+    background-color: #F2F2F2;
+    cursor: pointer;
+}
